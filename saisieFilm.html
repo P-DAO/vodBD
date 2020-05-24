@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Ajouter</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style/vod.css">
+    </head>
+	<body>
+	<header>
+		<div class="menu">
+		<nav>
+			<a class="active" href="vod.html" title="Accueil">Films VOD </a>
+			<a href="consulterFilms.php">Consulter</a>
+			<a href="saisieTitreRecherche.html">Rechercher</a>
+			<a href="saisieFilm.html">Ajouter</a>
+			<a href="saisieTitreSuppression.html">Supprimer</a>
+		</nav>
+		</div>
+	</header>
+	
+	<section class="form">
+	<fieldset>
+		<legend>Ajouter un Film</legend><br/>
+		
+		<form action="ajouterFilm.php" method="POST" name="ajout" >	
+			<label>Titre du film à ajouter:</label>
+			<input type="text" name="adTitre" placeholder="Film à ajouter" required />
+			<br/>
+			<label>Année du film: </label>
+			<input type="text" name="adAnnee" placeholder="Année du film" minlenght="4" maxlength="4" size="10" required />
+			<br/>
+			<label>Réalisateur du film: </label>
+			<input type="text" name="adReal" placeholder="Réalisateur du film" required />
+			<br/>
+			<input type="submit" value="Valider" />
+			<input type="reset" value="Annuler" />
+		</form>
+	</fieldset>
+	
+	</section>
+	
+	</body>
+</html>
